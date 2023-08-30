@@ -7,7 +7,7 @@ const success = require('./app/middleware/middleware.success');
 connectDb();
 
 app.use(express.json());
-// app.use('/user', require('./app/routers/router.user.js'));
+app.use('/user', require('./app/routes/route.user.js'));
 app.use('/category', require('./app/routes/route.category.js'));
 app.use('/book', require('./app/routes/route.book.js'));
 
